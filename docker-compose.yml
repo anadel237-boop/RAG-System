@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    container_name: clinical_insight_bot
+    ports:
+      - "5557:5557"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    environment:
+      - FLASK_PORT=5557
+    restart: unless-stopped
