@@ -1,0 +1,40 @@
+========================================
+MEDICAL RAG SYSTEM - QUICK START GUIDE
+========================================
+
+✅ STATUS: All 1000 cases loaded and ready!
+
+TO RUN THE SYSTEM:
+------------------
+1. Open Terminal
+2. Navigate to this folder:
+   cd "/Users/saiofocalallc/Medical_RAG_System_Neon(clinicalBERT)"
+
+3. Run the system:
+   python load_and_run.py
+
+4. Open browser to:
+   http://localhost:5557
+
+WHAT'S WORKING:
+---------------
+✅ ClinicalBERT AI model loaded
+✅ 1000 medical cases in database
+✅ 1680 chunks processed
+✅ Neon PostgreSQL connected
+✅ No reprocessing needed (cached)
+
+EXAMPLE QUERY:
+--------------
+Query: "Patient with chest pain and shortness of breath"
+Case ID: case_0001_mimic.txt (optional)
+
+IMPORTANT FILES:
+----------------
+- load_and_run.py (main script)
+- data/ (1000 case files)
+- processing_cache.db (cache)
+- .env (credentials)
+
+For more details, see PROJECT_STATUS.md
+========================================

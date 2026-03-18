@@ -1,0 +1,4 @@
+Patient ID: 123
+Category: Discharge summary
+
+Patient is a 55 year old male admitted for chest pain. EKG showed ST elevation. Troponin was elevated. Diagnosis: Acute Myocardial Infarction. Plan: Aspirin, Beta Blocker, Statin.

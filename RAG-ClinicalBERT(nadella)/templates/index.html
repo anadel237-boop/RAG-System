@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical RAG System | Clinical Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <div class="logo-icon">⚕️</div>
+                <h1>Medical RAG System</h1>
+            </div>
+            <div class="header-controls">
+                <span class="status-badge" id="systemStatus">
+                    <span class="status-dot"></span> System Online
+                </span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="query-section">
+                <div class="welcome-text">
+                    <h2>Clinical Intelligence Assistant</h2>
+                    <p>Retrieve relevant medical cases and insights using advanced semantic search.</p>
+                </div>
+
+                <form id="queryForm" class="query-form">
+                    <div class="input-group">
+                        <label for="query">Medical Query</label>
+                        <textarea id="query" name="query" placeholder="Describe symptoms, diagnosis, or clinical questions..." required></textarea>
+                    </div>
+                    
+                    <div class="input-group secondary">
+                        <label for="case_id">Specific Case ID (Optional)</label>
+                        <input type="text" id="case_id" name="case_id" placeholder="e.g., case_0001_mimic.txt">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Analyze Cases</span>
+                        <span class="btn-icon">🔍</span>
+                    </button>
+                </form>
+            </section>
+
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-header">
+                    <h3>Analysis Results</h3>
+                    <div class="meta-info">
+                        <span class="meta-item">Confidence: <strong id="confidenceScore">-</strong></span>
+                        <span class="meta-item">Time: <strong id="processingTime">-</strong>s</span>
+                    </div>
+                </div>
+
+                <div class="answer-card">
+                    <div class="card-header">
+                        <h4>Generated Insight</h4>
+                    </div>
+                    <div class="card-body" id="answerContent">
+                        <!-- Answer will be injected here -->
+                    </div>
+                </div>
+
+                <div class="sources-container">
+                    <h4>📚 Referenced Cases</h4>
+                    <div class="sources-list" id="sourcesList">
+                        <!-- Sources will be injected here -->
+                    </div>
+                </div>
+            </section>
+
+            <div id="loadingState" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p>Analyzing medical database...</p>
+            </div>
+
+            <div id="errorState" class="error-state hidden">
+                <div class="error-icon">⚠️</div>
+                <p id="errorMessage">An error occurred while processing your request.</p>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <p>Medical RAG System v2.0 • Powered by Neon DB & ClinicalBERT</p>
+            <p class="disclaimer">For research and educational purposes only. Always consult qualified medical professionals.</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

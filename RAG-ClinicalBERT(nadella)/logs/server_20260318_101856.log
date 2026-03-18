@@ -1,0 +1,76 @@
+2026-03-18 10:19:01,445 - INFO - 🔄 Initializing ClinicalBERT...
+2026-03-18 10:19:01,562 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 10:19:01,578 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/emilyalsentzer/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b/config.json "HTTP/1.1 200 OK"
+2026-03-18 10:19:01,678 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 10:19:01,678 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 10:19:01,760 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 10:19:01,805 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 10:19:01,849 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 10:19:01,896 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 10:19:01,913 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/emilyalsentzer/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b/vocab.txt "HTTP/1.1 200 OK"
+2026-03-18 10:19:01,923 - INFO - ✅ ClinicalBERT tokenizer loaded
+2026-03-18 10:19:01,962 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 10:19:01,978 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/emilyalsentzer/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b/config.json "HTTP/1.1 200 OK"
+2026-03-18 10:19:02,033 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 10:19:02,102 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT "HTTP/1.1 200 OK"
+2026-03-18 10:19:02,400 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT/commits/main "HTTP/1.1 200 OK"
+2026-03-18 10:19:02,523 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT/discussions?p=0 "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26986.53it/s]
+[1mBertModel LOAD REPORT[0m from: emilyalsentzer/Bio_ClinicalBERT
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+2026-03-18 10:19:02,597 - INFO - ✅ ClinicalBERT model loaded
+2026-03-18 10:19:02,611 - INFO - HTTP Request: GET https://huggingface.co/api/models/emilyalsentzer/Bio_ClinicalBERT/commits/refs%2Fpr%2F16 "HTTP/1.1 200 OK"
+2026-03-18 10:19:02,726 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/refs%2Fpr%2F16/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 10:19:02,772 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/refs%2Fpr%2F16/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 10:19:02,780 - INFO - HTTP Request: HEAD https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 10:19:02,797 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/emilyalsentzer/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b/config.json "HTTP/1.1 200 OK"
+2026-03-18 10:19:02,802 - WARNING - ⚠️  Could not initialize QA pipeline for emilyalsentzer/Bio_ClinicalBERT (this is normal for embedding-only models): "Unknown task question-answering, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection']"
+2026-03-18 10:19:02,816 - INFO - ✅ OpenAI client initialized for answer generation
+2026-03-18 10:19:03,310 - INFO - ✅ Connected to Neon database
+2026-03-18 10:19:03,310 - INFO - Found 2 case files to process...
+2026-03-18 10:19:03,565 - INFO - ✅ Connected to Neon database
+2026-03-18 10:19:03,889 - INFO - ✅ Created medical RAG tables
+2026-03-18 10:19:03,892 - INFO - 📁 Found 0 unprocessed files out of 2 total
+2026-03-18 10:19:03,893 - INFO - ✅ All files already processed!
+2026-03-18 10:19:03,893 - INFO - Starting Clinical Insight Bot on port 5557
+2026-03-18 10:19:03,893 - INFO - Access at: http://localhost:5557
+ * Serving Flask app 'optimized_medical_rag_system'
+ * Debug mode: off
+2026-03-18 10:19:03,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5557
+ * Running on http://172.30.64.111:5557
+2026-03-18 10:19:03,915 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-18 10:19:24,797 - INFO - 🔍 Query embedding generated (dimension: 768)
+2026-03-18 10:19:24,878 - INFO - 🔍 Searching 1682 cases with embeddings...
+2026-03-18 10:19:24,878 - INFO - 📊 Query embedding dimension: 768
+2026-03-18 10:19:25,014 - INFO - ✅ Found 5 similar cases
+2026-03-18 10:19:25,014 - INFO - 📈 Top result: mimic_iii_2_chunk_1 - Similarity: 0.6503, Distance: 0.3497
+2026-03-18 10:19:25,545 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-03-18 10:19:25,547 - WARNING - OpenAI generation failed, falling back: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fhYA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-03-18 10:19:25,633 - INFO - 127.0.0.1 - - [18/Mar/2026 10:19:25] "POST /api/medical_query HTTP/1.1" 200 -
+2026-03-18 10:21:24,449 - INFO - 127.0.0.1 - - [18/Mar/2026 10:21:24] "GET / HTTP/1.1" 200 -
+2026-03-18 10:21:24,518 - INFO - 127.0.0.1 - - [18/Mar/2026 10:21:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-18 10:21:24,518 - INFO - 127.0.0.1 - - [18/Mar/2026 10:21:24] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-03-18 10:21:49,469 - INFO - 🔍 Query embedding generated (dimension: 768)
+2026-03-18 10:21:49,523 - INFO - 🔍 Searching 1682 cases with embeddings...
+2026-03-18 10:21:49,523 - INFO - 📊 Query embedding dimension: 768
+2026-03-18 10:21:49,767 - INFO - ✅ Found 5 similar cases
+2026-03-18 10:21:49,768 - INFO - 📈 Top result: case_0624_mimic_chunk_2 - Similarity: 0.7539, Distance: 0.2461
+2026-03-18 10:21:50,038 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-03-18 10:21:50,043 - WARNING - OpenAI generation failed, falling back: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************fhYA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-03-18 10:21:50,127 - INFO - 127.0.0.1 - - [18/Mar/2026 10:21:50] "POST /api/medical_query HTTP/1.1" 200 -
+2026-03-18 14:14:07,438 - INFO - 127.0.0.1 - - [18/Mar/2026 14:14:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

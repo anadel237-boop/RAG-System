@@ -1,0 +1,4 @@
+Patient ID: 124
+Category: Radiology
+
+Chest X-ray shows clear lungs. No cardiomegaly. No pleural effusion.
